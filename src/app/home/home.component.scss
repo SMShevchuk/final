@@ -65,7 +65,8 @@
                     position: absolute;
                     bottom: -85%;
                     left: 60%;
-                    transform: scale(0.35);                   
+                    transform: scale(0.35);
+                                       
                 }
 
                 .point {
@@ -132,7 +133,6 @@
                     display: inline-block;
                     width: 45%;
                     margin: 0 2.5% 2.5%;
-                    box-shadow: 0 0 5px 10px silver;
                     transition-duration: 600ms;
 
                     &:hover {
