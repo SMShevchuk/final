@@ -124,6 +124,7 @@
         .link {
             width: 40%;
             height: 80vh;
+            transition-duration: 600ms;
 
             a {
 
@@ -131,6 +132,12 @@
                     display: inline-block;
                     width: 45%;
                     margin: 0 2.5% 2.5%;
+                    box-shadow: 0 0 5px 10px silver;
+                    transition-duration: 600ms;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
             }
 
