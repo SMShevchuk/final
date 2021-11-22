@@ -55,18 +55,39 @@
                     height: 30%;
                     margin-top: 15%;
                     background-color: #3f5b78;
+
+                   
                 }
 
                 .main_girl {
                     height: 100%;
                 }
 
+
+                  
+
                 .arrow {
                     position: absolute;
                     bottom: -85%;
                     left: 60%;
                     transform: scale(0.35);
-                                       
+
+                    animation-duration: 3s;
+                    animation-name: slidein;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    
+
+                    @keyframes slidein {
+                        from {
+                         opacity: 1;
+                        }
+                      
+                        to {
+                         opacity: 0.2;
+                        }
+                      }
+
                 }
 
                 .point {
@@ -78,6 +99,21 @@
                     left: 60%;
                     transform: scale(0.2);
 
+                    animation-duration: 3s;
+                    animation-name: slide;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    
+
+                    @keyframes slide {
+                        from {
+                            transform: scale(0.2);
+                        }
+                      
+                        to {
+                            transform: scale(0.25);
+                        }
+                      }
                     
                     
                 }
@@ -107,6 +143,12 @@
                     bottom: 5px;
                     left: 50%;
                     transform: scale(0.3);
+
+                    animation-duration: 3s;
+                    animation-name: slide;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+    
                 }
                 
                 p {
@@ -136,7 +178,7 @@
                     transition-duration: 600ms;
 
                     &:hover {
-                        transform: scale(1.1);
+                        transform: rotate3d(2, 1, 0, 40deg)
                     }
                 }
             }
