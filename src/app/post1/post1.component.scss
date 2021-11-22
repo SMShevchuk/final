@@ -1,0 +1,113 @@
+
+div.container {
+    width: 100%;
+    height: 100%;
+    //background-color: chocolate;
+    position: relative;
+    
+    div.logo_1 {
+        width: 500px;
+        height: 100px;
+        background: url(../../assets/foto/pg-1/logo1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 2;
+        position: relative;
+        left: 50px;
+        top: 2vh;
+    }
+    div.foto_1 {
+        width: 500px;
+        height: 600px;
+        //background-color: red;
+        background: url(../../assets/foto/pg-1/foto1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2;
+        position: absolute;
+        top: 20vh;
+        left: 20%;
+    }
+    div.text_1 {
+        width: 500px;
+        height: 550px;
+        //background-color: red;
+        z-index: 2;
+        position: absolute;
+        top: 22vh;
+        left: 55%;
+        h1 {
+            font-size: 69.51px;
+            font-family: "Montserrat";
+            color: rgb(27, 26, 28);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 0.976;
+            text-align: left;
+            position: relative;
+            top: 50px;
+        }
+        p {
+            font-size: 26px;
+            font-family: "Poppins";
+            color: rgb(36, 35, 41);
+            line-height: 1.907;
+            text-align: right;
+            position: relative;
+            top: 150px;
+        }
+        a {
+            text-decoration: none;
+            i {
+             
+                    font-size: 2em;
+                    font-family: "Poppins";
+                    color: rgb(36, 35, 41);
+                    font-weight: bold;
+                    font-style: italic;
+                    line-height: 1.29;
+                    position: absolute;
+                    top: -150px;
+                    left: 250px;
+            }
+        }
+    }
+
+    section.desing {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        //background-color: cornflowerblue;
+        overflow: hidden;
+        z-index: 1;
+        div.itm_1 {
+            position: absolute;
+            left: 92%;
+            top: 150px;
+        }
+        div.itm_2 {
+            position: absolute;
+            left: 40%;
+            top: 50px;
+        }
+        div.itm_3 {
+            position: absolute;
+            left: 85%;
+            top: 350px;
+        }
+        div.itm_4 {
+            position: absolute;
+            left: 0%;
+            top: 250px;
+        }
+        div.itm_5 {
+            position: absolute;
+            left: 50%;
+            top: 780px;
+        }
+    }
+    
+}
