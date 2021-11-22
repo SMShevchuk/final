@@ -1,0 +1,78 @@
+.container {
+    width: 800px;
+    height: 800px;
+    position: relative;
+    border: 1px solid gray;
+    margin: 50px auto;
+    background-color: white;
+}
+.logo {
+    text-align: center;
+    margin-top: 40px;
+    
+}
+h1 {
+    margin: 0;
+    margin-top: 45px;
+    text-align: center;
+    font-size: 66px;
+    text-transform: uppercase;
+}
+.line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.dote {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 485px;
+    left: 10px;
+}
+.dote2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 60px;
+    top: 10px;
+}
+.arrow {
+    position: absolute;
+    top: 55px;
+    left: 55px;
+}
+.priamokut {
+    position: absolute;
+    top: 290px;
+    right: 0;
+}
+.plus {
+    position: absolute;
+    bottom: 55px;
+    right: 70px;
+}
+.center {
+    width: 500px;
+    height: 370px;
+    position: absolute;
+    z-index: 1;
+    left: 145px;
+    top: 270px;
+}
+.text {
+    margin-top: 400px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+p{
+    text-align: center;
+    margin-top: 30px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
