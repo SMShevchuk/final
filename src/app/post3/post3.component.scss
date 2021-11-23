@@ -1,78 +1,56 @@
 .container {
-    width: 800px;
-    height: 800px;
+    //background-color: white;
+    width: 100%;
+    height: 100vh;
     position: relative;
-    border: 1px solid gray;
-    margin: 50px auto;
-    background-color: white;
-}
-.logo {
-    text-align: center;
-    margin-top: 40px;
-    
+    overflow: hidden;
 }
 h1 {
-    margin: 0;
-    margin-top: 45px;
-    text-align: center;
-    font-size: 66px;
+    position: absolute;
+    font-size: 100px;
+    left: 33%;
+    top: 7%;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 0.9;
+    z-index: 2;
 }
-.line {
+.woman {
+    width: 45%;
     position: absolute;
-    left: 0;
-    bottom: 0;
-}
-.dote {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 485px;
-    left: 10px;
-}
-.dote2 {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    right: 60px;
-    top: 10px;
+    top: 40%;
+    right: 20%;
+    z-index: 1;
 }
 .arrow {
     position: absolute;
-    top: 55px;
-    left: 55px;
+    top: 7%;
+    left: 20%;
 }
-.priamokut {
+.logo {
     position: absolute;
-    top: 290px;
-    right: 0;
+    top: 5%;
+    left: 45%;
+    
 }
 .plus {
     position: absolute;
-    bottom: 55px;
-    right: 70px;
+    top: 65%;
+    left: 10%;
 }
-.center {
-    width: 500px;
-    height: 370px;
+.priamokut {
     position: absolute;
-    z-index: 1;
-    left: 145px;
-    top: 270px;
+    right: 0;
+    top: 45%;
 }
-.text {
-    margin-top: 400px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 30px;
+.dote {
+    position: absolute;
+    bottom: 8%;
+    left: 15%;
 }
-p{
-    text-align: center;
-    margin-top: 30px;
-}
-a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
+.dote2 {
+    position: absolute;
+    right: 15%;
+    top: 1%;
 }
