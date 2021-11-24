@@ -82,16 +82,16 @@ h1 {
     z-index: 0;
 
     animation-duration: 5s;
-    animation-name: dote2;
+    animation-name: dote;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
-    @keyframes dote2{
+    @keyframes dote{
         from {
-            transform: translateX(0);
+            transform: rotate(180deg);
         }
         to {
-            transform: translateX(100px);
+            transform: rotate(360deg);
         }
     }
 
