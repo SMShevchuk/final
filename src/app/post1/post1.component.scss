@@ -4,11 +4,12 @@ div.container {
     height: 100vh;
     //background-color: chocolate;
     position: relative;
-    
+    overflow: hidden;
     div.logo_1 {
-        width: 500px;
-        height: 100px;
+        width: 20%;
+        height: 10%;
         background: url(../../assets/foto/pg-1/logo1.png);
+        //background-color: red;
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -18,8 +19,8 @@ div.container {
         top: 2vh;
     }
     div.foto_1 {
-        width: 500px;
-        height: 600px;
+        width: 35%;
+        height: 65%;
         //background-color: red;
         background: url(../../assets/foto/pg-1/foto1.png);
         background-position: center;
@@ -28,11 +29,11 @@ div.container {
         z-index: 2;
         position: absolute;
         top: 20vh;
-        left: 20%;
+        left: 14%;
     }
     div.text_1 {
-        width: 500px;
-        height: 550px;
+        width: 30%;
+        height: 50%;
         //background-color: red;
         z-index: 2;
         position: absolute;
@@ -47,7 +48,7 @@ div.container {
             line-height: 0.976;
             text-align: left;
             position: relative;
-            top: 50px;
+            top: 0%;
         }
         p {
             font-size: 26px;
@@ -56,7 +57,7 @@ div.container {
             line-height: 1.907;
             text-align: right;
             position: relative;
-            top: 150px;
+            top: 10%;
         }
         a {
             text-decoration: none;
@@ -69,8 +70,8 @@ div.container {
                     font-style: italic;
                     line-height: 1.29;
                     position: absolute;
-                    top: -150px;
-                    left: 250px;
+                    top: -32%;
+                    left: 30%;
             }
         }
     }
@@ -86,28 +87,125 @@ div.container {
         div.itm_1 {
             position: absolute;
             left: 92%;
-            top: 150px;
+            top: 20%;
         }
         div.itm_2 {
             position: absolute;
             left: 40%;
-            top: 50px;
+            top: 2%;
         }
         div.itm_3 {
             position: absolute;
             left: 85%;
-            top: 350px;
+            top: 30%;
         }
         div.itm_4 {
             position: absolute;
             left: 0%;
-            top: 250px;
+            top: 30%;
         }
         div.itm_5 {
             position: absolute;
             left: 50%;
-            top: 780px;
+            top: 85%;
         }
     }
     
 }
+
+/* -------- */
+
+@media screen and (max-width: 1366px) {
+    div.container {
+        width: 100%;
+        height: 100vh;
+        //background-color: chocolate;
+     
+        div.logo_1 {
+            width: 15%;
+            height: 5%;
+           
+            left: 50px;
+            top: 5vh;
+        }
+        div.foto_1 {
+            width: 33%;
+            height: 60%;
+            top: 25vh;
+            left: 14%;
+        }
+        div.text_1 {
+            width: 30%;
+            height: 50%;
+            top: 35vh;
+            left: 51%;
+            h1 {
+                font-size: 45px;
+                line-height: 0.876;
+                top: 0%;
+            }
+            p {
+                font-size: 20px;
+                line-height: 1.707;
+                top: 10%;
+            }
+            a {
+                text-decoration: none;
+                i {
+                 
+                        font-size: 1.5em;
+                        line-height: 1.29;
+                        position: absolute;
+                        top: -56%;
+                        left: 55%;
+                }
+            }
+        }
+    
+        section.desing {
+            //background-color: cornflowerblue;
+            div.itm_1 {
+                position: absolute;
+                left: 88%;
+                top: 15%;
+               img {
+                   width: 60%;
+               }
+            }
+            div.itm_2 {
+                position: absolute;
+                left: 40%;
+                top: 5%;
+                img {
+                    width: 60%;
+                }
+            }
+            div.itm_3 {
+                position: absolute;
+                left: 85%;
+                top: 38%;
+                img {
+                    width: 60%;
+                }
+            }
+            div.itm_4 {
+                position: absolute;
+                left: 0%;
+                top: 30%;
+                img {
+                    width: 60%;
+                }
+            }
+            div.itm_5 {
+                position: absolute;
+                left: 50%;
+                top: 85%;
+                img {
+                    width: 65%;
+                }
+            }
+        }
+        
+    }
+  }
+
