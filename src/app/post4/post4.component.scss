@@ -66,3 +66,34 @@ h1 {
     top: 25%;
     z-index: 0;
 }
+@media (max-width: 1350px) {
+    .plus {
+        right: 15%;
+    }
+    .dote2 {
+        right: 0;
+    }
+    .dote {
+        display: none;
+    }
+    .foto {
+        width: 70%;
+    }
+    h1 {
+        font-size: 80px;
+    }
+}
+@media (max-width: 800px) {
+    .foto {
+        top: 5%;
+        width: 90%;
+        left: 5%;
+    }
+    .line {
+        display: none;
+    }
+    h1 {
+        font-size: 50px;
+        bottom: 25%;
+    }
+}

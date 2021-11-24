@@ -27,6 +27,20 @@ h1 {
     position: absolute;
     top: 7%;
     left: 20%;
+
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes slide {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0.3;
+        }
+    }
 }
 .logo {
     position: absolute;
@@ -38,6 +52,22 @@ h1 {
     position: absolute;
     top: 65%;
     left: 10%;
+
+    animation-duration: 3s;
+    animation-name: plusik;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes plusik {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+            
+        }
+    }
+
 }
 .priamokut {
     position: absolute;
@@ -55,6 +85,30 @@ h1 {
     position: absolute;
     right: 15%;
     top: 1%;
+
+    animation-duration: 5s;
+    animation-name: dote;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes dote{
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(200px);
+        }
+    }
+
+
+}
+@media (max-width: 1370px) {
+    .dote2 {
+        right: 1%;
+    }
+    .arrow {
+        top: 1%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -68,13 +122,11 @@ h1 {
         top: -7%;
         position: relative;
         left: 0;
-        //display: inline-block;
         width: 25%;
-        //margin: 0 auto;
+      
     }
     h1 {
         position: relative;
-        //display: block;
         left: 0;
         font-size: 50px;
     }
