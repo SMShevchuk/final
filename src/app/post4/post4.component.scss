@@ -43,11 +43,38 @@ h1 {
     top: 1%;
     left: 25%;
     z-index: 0;
+
+    animation-duration: 5s;
+    animation-name: dote;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes dote{
+        from {
+            transform: translateX(200px);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
 }
 .dote2 {
     position: absolute;
     bottom: 25%;
     right: 12%;
+    animation-duration: 5s;
+    animation-name: dote2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes dote2{
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(200px);
+        }
+    }
 }
 .arrow {
     position: absolute;
@@ -58,6 +85,21 @@ h1 {
     position: absolute;
     bottom: 15%;
     right: 35%;
+
+    animation-duration: 3s;
+    animation-name: plusik;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes plusik {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+            
+        }
+    }
 } 
 .circle {
     
