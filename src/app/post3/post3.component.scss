@@ -80,6 +80,21 @@ h1 {
     bottom: 8%;
     left: 15%;
     z-index: 0;
+
+    animation-duration: 5s;
+    animation-name: dote2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes dote2{
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(100px);
+        }
+    }
+
 }
 .dote2 {
     position: absolute;
@@ -87,11 +102,11 @@ h1 {
     top: 1%;
 
     animation-duration: 5s;
-    animation-name: dote;
+    animation-name: dote2;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
-    @keyframes dote{
+    @keyframes dote2{
         from {
             transform: translateX(0);
         }
