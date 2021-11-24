@@ -51,7 +51,7 @@ h1 {
 
     @keyframes dote{
         from {
-            transform: translateX(200px);
+            transform: translateX(-200px);
         }
         to {
             transform: translateX(0);
@@ -107,6 +107,21 @@ h1 {
     left: 25%;
     top: 25%;
     z-index: 0;
+
+    animation-duration: 2s;
+    animation-name: circle;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes circle {
+        from {
+            transform: scale(0.8);
+        }
+        to {
+            transform: scale(1.3);
+            
+        }
+    }
 }
 @media (max-width: 1350px) {
     .plus {
