@@ -56,3 +56,49 @@ h1 {
     right: 15%;
     top: 1%;
 }
+
+@media (max-width: 800px) {
+    .container {
+        text-align: center;
+    }
+    .arrow, .dote, .dote2, .plus {
+        display: none;
+    }
+    .logo {
+        top: -7%;
+        position: relative;
+        left: 0;
+        //display: inline-block;
+        width: 25%;
+        //margin: 0 auto;
+    }
+    h1 {
+        position: relative;
+        //display: block;
+        left: 0;
+        font-size: 50px;
+    }
+    .woman {
+        top: 15%;
+        position: relative;
+        left: 0;
+        width: 80%;
+        
+    }
+    .priamokut {
+        top: 30%;
+    }
+ }
+
+ @media (max-height: 700px) {
+     .dote2 {
+         
+         right: 5%;
+     }
+     h1 {
+         z-index: 3;
+     }
+     .dote {
+         display: none;
+     }
+ }
