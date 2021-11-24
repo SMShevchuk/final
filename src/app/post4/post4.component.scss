@@ -37,6 +37,20 @@ h1 {
     width: 15%;
     position: absolute;
     top: 30%;
+
+    animation-duration: 7s;
+    animation-name: line;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes line{
+        from {
+            transform: translateY(-150px);
+        }
+        to {
+            transform: translateY(100px);
+        }
+    }
 }
 .dote {
     position: absolute;
