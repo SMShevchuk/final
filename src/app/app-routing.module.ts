@@ -9,15 +9,15 @@ import { Post4Component } from './post4/post4.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeComponent, data: {animation: 'home' }},
 
-  { path: 'post1', component: Post1Component },
+  { path: 'post1', component: Post1Component, data: {animation: 'post1' }},
 
-  { path: 'post2', component: Post2Component },
+  { path: 'post2', component: Post2Component, data: {animation: 'post1' } },
 
-  { path: 'post3', component: Post3Component },
+  { path: 'post3', component: Post3Component, data: {animation: 'post1' } },
 
-  { path: 'post4', component: Post4Component },
+  { path: 'post4', component: Post4Component, data: {animation: 'post1' } },
 
 ];
 

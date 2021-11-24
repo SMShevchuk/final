@@ -1,2 +1,4 @@
-<router-outlet></router-outlet>
 <!-- asda -->
+<div [@routeChangeAnimation]="getRouteAnimationState(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
