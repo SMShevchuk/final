@@ -17,10 +17,11 @@ h1 {
     z-index: 2;
 }
 .woman {
-    width: 45%;
+    //width: 45%;
+    height: 60%;
     position: absolute;
-    top: 40%;
-    right: 20%;
+    bottom: 2%;
+    right: 25%;
     z-index: 2;
 }
 .arrow {
@@ -72,8 +73,18 @@ h1 {
 .priamokut {
     position: absolute;
     right: 0;
-    top: 45%;
+    bottom: 0;
     z-index: 1;
+}
+p {
+    position: absolute;
+    width: 20%;
+    font-size: 24px;
+    color: white;
+    right: 3%;
+    line-height: 1.5;
+    bottom: 30%;
+    z-index: 2;
 }
 .dote {
     position: absolute;
@@ -117,13 +128,26 @@ h1 {
 
 
 }
-@media (max-width: 1370px) {
+@media (max-width: 1350px) {
     .dote2 {
         right: 1%;
     }
     .arrow {
         top: 1%;
     }
+    p {
+        width: 35%;
+        bottom: 30%;
+        right: 0;
+    }
+    .dote, .dote2 {
+        display: none;
+    }
+    .woman {
+        left:0;
+        width: 60%;
+    }
+  
 }
 
 @media (max-width: 800px) {
@@ -146,6 +170,7 @@ h1 {
         font-size: 50px;
     }
     .woman {
+        height: 50%;
         top: 15%;
         position: relative;
         left: 0;
@@ -154,6 +179,11 @@ h1 {
     }
     .priamokut {
         top: 30%;
+    }
+    p {
+        bottom: 5%;
+        width: 100%;
+        color: black;
     }
  }
 

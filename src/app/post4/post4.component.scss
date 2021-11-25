@@ -12,7 +12,7 @@ h1 {
     font-weight: 800;
     line-height: 0.9;
     bottom: 15%;
-    left: 20%;
+    left: 15%;
     z-index: 2;
 }
 .logo {
@@ -72,23 +72,30 @@ h1 {
         }
     }
 }
-.dote2 {
-    position: absolute;
-    bottom: 25%;
-    right: 12%;
-    animation-duration: 5s;
-    animation-name: dote2;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+// .dote2 {
+//     position: absolute;
+//     bottom: 25%;
+//     right: 12%;
+//     animation-duration: 5s;
+//     animation-name: dote2;
+//     animation-iteration-count: infinite;
+//     animation-direction: alternate;
 
-    @keyframes dote2{
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(200px);
-        }
-    }
+//     @keyframes dote2{
+//         from {
+//             transform: translateX(0);
+//         }
+//         to {
+//             transform: translateX(200px);
+//         }
+//     }
+// }
+p {
+    position: absolute;
+    font-size: 20px;
+    line-height: 1.5;
+    bottom: 30%;
+    right: 5%;
 }
 .arrow {
     position: absolute;
@@ -153,7 +160,7 @@ h1 {
 }
 @media (max-width: 1350px) {
     .plus {
-        right: 15%;
+        display: none;
     }
     .dote2 {
         right: 0;
@@ -165,8 +172,27 @@ h1 {
         width: 70%;
     }
     h1 {
+        left: 10%;
         font-size: 80px;
     }
+    p {
+        bottom: 20%;
+    }
+}
+@media (max-width: 1200px) {
+    h1 {
+        bottom: 25%;
+    }
+    p {
+        left: 10%;
+        bottom: 8%;
+    }
+    .arrow {
+        transform: rotate(90deg);
+        bottom: 25%;
+        height: 5%;
+    }
+    
 }
 @media (max-width: 800px) {
     .foto {
@@ -184,5 +210,8 @@ h1 {
     .logo {
         
         bottom: 20%;
+    }
+    .arrow {
+        display: none;
     }
 }
