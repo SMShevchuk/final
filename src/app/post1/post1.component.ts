@@ -90,8 +90,11 @@ export class Post1Component implements OnInit {
     this.open = true;
     
     }, 500);
-
-
     console.log('ngOnInit', this.open);
   }
+
+  
+
+
+
 }
