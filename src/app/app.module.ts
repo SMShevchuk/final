@@ -9,7 +9,8 @@ import { Post2Component } from './post2/post2.component';
 import { Post1Component } from './post1/post1.component';
 import { Post3Component } from './post3/post3.component';
 import { HomeComponent } from './home/home.component';
-// import { JonSnowComponent } from './jon-snow/jon-snow.component';
+import { JonSnowComponent } from './post1/jon-snow/jon-snow.component';
+ //import { JonSnowComponent } from './jon-snow/jon-snow.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { HomeComponent } from './home/home.component';
     Post1Component,
     Post3Component,
     HomeComponent,
-    //JonSnowComponent
+    JonSnowComponent
   ],
   imports: [
     BrowserModule,
