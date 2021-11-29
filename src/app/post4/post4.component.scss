@@ -214,4 +214,10 @@ p {
     .arrow {
         display: none;
     }
+    
+}
+@media (max-height:750px) {
+    p, h1 {
+        z-index: 3;
+    }
 }
