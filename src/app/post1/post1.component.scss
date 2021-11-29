@@ -16,23 +16,35 @@ div.container {
         left: 5%;
         text-decoration: none;
         font-size: 1.5em;
-        border: 2px solid black;
+        border: 2px solid rgba(38, 100, 141, 0.11);
         color: rgb(38, 100, 141);
         transition-duration: 1s;
-       
+        overflow: hidden;
+        border-radius: 5px;
         i {
-            color: red;
+            color: rgb(38, 100, 141);
             position: relative;
             left: -85%;
+            transition-duration: .5s;
+        }
+        &:hover i {
+            color: transparent;
+            transition-duration: .5s;
         }
     }
-    a.btn_back:hover::after {
-        content: "";
-        width: 80%;
-        transition-duration: 1s;
-        color: white;
-      
 
+    a.btn_back:hover::after {
+        content: "Go";
+        width: 80%;
+        transition-duration: .5s;
+        color: white;
+        line-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transform: rotate(0deg) scale(1);
+        font-style: italic;
     }
     a.btn_back::after {
         content: "";
@@ -40,12 +52,15 @@ div.container {
         position: absolute;
         width: 0%;
         height: 100%;
-        background-color: black;
+        background-color: rgb(38, 100, 141);
         top: 0px;
         left: 0px;
         transition-duration: 1s;
         color: white;
-        border-radius: 0px 0px 100px 0px;
+        //border-radius: 0px 0px 100px 0px;
+        transform: rotate(145deg) scale(0);
+        overflow: hidden;
+
     }
     a.btn_back::before {
         content: "";
@@ -53,13 +68,12 @@ div.container {
         position: absolute;
         width: 40%;
         height: 100%;
-        background-color: rgb(128, 67, 67);
+        background-color: rgb(38, 100, 141);
         top: 0px;
         left: 60%;
         transition-duration: 1s;
         color: white;
         border-radius: 0px 0px 0px 0px;
-
     }
     
     /*------------------------*/
@@ -170,60 +184,7 @@ div.container {
             top: 85%;
         }
       
-
     }
-      /*----------*/
-
-      div.itm_JonSnow1 {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        top: -94px;
-        //background-color: rgb(158, 69, 69);
-
-        z-index: 1;
-        display: flex;
-        overflow: hidden;
-        div.snow1{
-            width: 11px;
-            height: 14px;
-            background: black;
-            position: relative;
-            top: -5%;
-            left: 0%;
-            border-radius: 50%;
-            background: #D4EAE9;
-           
-            background: -webkit-radial-gradient(center, #D4EAE9, #0B827D);
-            background: -moz-radial-gradient(center, #D4EAE9, #0B827D);
-            background: radial-gradient(ellipse at center, #D4EAE9, #0B827D);
-            opacity: .8;
-
-            margin-left: 2%;
-
-            animation: 15s ease-in 1s infinite reverse both running identifier;
-            //animation: identifier linear 5s;
-            animation-delay: 35s;
-        }
-        @keyframes identifier {
-
-            0% { 
-                transform: translateY(97vh) translateX(50px) scale(0);
-                background: radial-gradient(ellipse at center, #d4eae9de, #0b827cd2);
-            }
-           
-            100% { 
-                transform: translateY(97%) translateX(-50px) scale(1);
-                background: radial-gradient(ellipse at center, #03d1c74d, #56c0bb4b);
-            }
-
-        }
-        
-    }
-
-    /*----------*/
-
-    
 }
 
 /* -------- */
