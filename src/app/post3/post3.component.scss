@@ -29,19 +29,19 @@ h1 {
     top: 7%;
     left: 20%;
 
-    animation-duration: 3s;
-    animation-name: slide;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    // animation-duration: 3s;
+    // animation-name: slide;
+    // animation-iteration-count: infinite;
+    // animation-direction: alternate;
 
-    @keyframes slide {
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0.3;
-        }
-    }
+    // @keyframes slide {
+    //     from {
+    //         opacity: 1;
+    //     }
+    //     to {
+    //         opacity: 0.3;
+    //     }
+    // }
 }
 .logo {
     position: absolute;
