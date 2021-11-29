@@ -253,15 +253,19 @@ p {
 @media (max-width: 1200px) {
     h1 {
         bottom: 25%;
+        font-size: 60px;
     }
     p {
         left: 10%;
-        bottom: 8%;
+        bottom: 10%;
     }
     .arrow {
-        transform: rotate(90deg);
+        // transform: rotate(90deg);
         bottom: 25%;
         height: 5%;
+    }
+    .logo {
+        display: none;
     }
     
 }
@@ -271,17 +275,15 @@ p {
         width: 90%;
         left: 5%;
     }
-    .line {
+    .line, .logo {
         display: none;
     }
     h1 {
         font-size: 50px;
         bottom: 25%;
+        left: 20%;
     }
-    .logo {
-        
-        bottom: 20%;
-    }
+  
     .arrow {
         display: none;
     }

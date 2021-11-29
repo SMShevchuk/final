@@ -199,24 +199,33 @@ p {
 
 
 }
-@media (max-width: 1350px) {
+@media (max-width: 1100px) {
     .dote2 {
         right: 1%;
     }
     .arrow {
         top: 1%;
+        height: 300px;
     }
     p {
         width: 35%;
         bottom: 30%;
         right: 0;
+        color: black;
     }
     .dote, .dote2 {
         display: none;
     }
     .woman {
-        left:0;
-        width: 60%;
+        left:7%;
+        // width: 70%;
+        
+    }
+    h1 {
+        position: relative;
+        text-align: center;
+        left: 5%;
+        font-size: 70px;
     }
   
 }
@@ -224,37 +233,34 @@ p {
 @media (max-width: 800px) {
     .container {
         text-align: center;
-    }
-    .arrow, .dote, .dote2, .plus {
-        display: none;
-    }
-    .logo {
-        top: -7%;
-        position: relative;
-        left: 0;
-        width: 25%;
       
     }
+    .arrow, .dote, .dote2, .plus, .logo {
+        display: none;
+    }
+    
     h1 {
-        position: relative;
+        //position: relative;
+        top: 0;
         left: 0;
         font-size: 50px;
     }
     .woman {
-        height: 50%;
-        top: 15%;
-        position: relative;
-        left: 0;
-        width: 80%;
+        //height: 50%;
+        top: 20%;
+        //position: relative;
+        left: 15%;
+        width: 70%;
         
     }
     .priamokut {
         top: 30%;
     }
     p {
-        bottom: 5%;
+        margin-bottom: 20px;
         width: 100%;
         color: black;
+        font-size: 16px;
     }
  }
 
