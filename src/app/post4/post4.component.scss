@@ -12,7 +12,7 @@ h1 {
     font-weight: 800;
     line-height: 0.9;
     bottom: 15%;
-    left: 20%;
+    left: 15%;
     z-index: 2;
 }
 .logo {
@@ -37,27 +37,104 @@ h1 {
     width: 15%;
     position: absolute;
     top: 30%;
+
+    animation-duration: 7s;
+    animation-name: line;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes line{
+        from {
+            transform: translateY(-150px);
+        }
+        to {
+            transform: translateY(100px);
+        }
+    }
 }
 .dote {
     position: absolute;
     top: 1%;
     left: 25%;
     z-index: 0;
+
+    animation-duration: 5s;
+    animation-name: dote;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes dote{
+        from {
+            transform: translateX(-200px);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
 }
-.dote2 {
+// .dote2 {
+//     position: absolute;
+//     bottom: 25%;
+//     right: 12%;
+//     animation-duration: 5s;
+//     animation-name: dote2;
+//     animation-iteration-count: infinite;
+//     animation-direction: alternate;
+
+//     @keyframes dote2{
+//         from {
+//             transform: translateX(0);
+//         }
+//         to {
+//             transform: translateX(200px);
+//         }
+//     }
+// }
+p {
     position: absolute;
-    bottom: 25%;
-    right: 12%;
+    font-size: 20px;
+    line-height: 1.5;
+    bottom: 30%;
+    right: 5%;
 }
 .arrow {
     position: absolute;
     right: 2%;
     bottom: 5%;
+
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes slide {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0.3;
+        }
+    }
 }
 .plus {
     position: absolute;
     bottom: 15%;
     right: 35%;
+
+    animation-duration: 3s;
+    animation-name: plusik;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes plusik {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+            
+        }
+    }
 } 
 .circle {
     
@@ -65,4 +142,82 @@ h1 {
     left: 25%;
     top: 25%;
     z-index: 0;
+
+    animation-duration: 2s;
+    animation-name: circle;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes circle {
+        from {
+            transform: scale(0.8);
+        }
+        to {
+            transform: scale(1.3);
+            
+        }
+    }
+}
+@media (max-width: 1350px) {
+    .plus {
+        display: none;
+    }
+    .dote2 {
+        right: 0;
+    }
+    .dote {
+        display: none;
+    }
+    .foto {
+        width: 70%;
+    }
+    h1 {
+        left: 10%;
+        font-size: 80px;
+    }
+    p {
+        bottom: 20%;
+    }
+}
+@media (max-width: 1200px) {
+    h1 {
+        bottom: 25%;
+    }
+    p {
+        left: 10%;
+        bottom: 8%;
+    }
+    .arrow {
+        transform: rotate(90deg);
+        bottom: 25%;
+        height: 5%;
+    }
+    
+}
+@media (max-width: 800px) {
+    .foto {
+        top: 5%;
+        width: 90%;
+        left: 5%;
+    }
+    .line {
+        display: none;
+    }
+    h1 {
+        font-size: 50px;
+        bottom: 25%;
+    }
+    .logo {
+        
+        bottom: 20%;
+    }
+    .arrow {
+        display: none;
+    }
+    
+}
+@media (max-height:750px) {
+    p, h1 {
+        z-index: 3;
+    }
 }

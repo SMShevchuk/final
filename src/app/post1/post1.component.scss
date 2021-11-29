@@ -3,6 +3,7 @@ div.container {
     width: 100%;
     height: 100vh;
     //background-color: chocolate;
+    //background: url(https://images.pexels.com/photos/730256/pexels-photo-730256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     position: relative;
     overflow: hidden;
     div.logo_1 {
@@ -63,15 +64,16 @@ div.container {
             text-decoration: none;
             i {
              
-                    font-size: 2em;
-                    font-family: "Poppins";
-                    color: rgb(36, 35, 41);
-                    font-weight: bold;
-                    font-style: italic;
-                    line-height: 1.29;
-                    position: absolute;
-                    top: -32%;
-                    left: 30%;
+                font-size: 2em;
+                font-family: "Poppins";
+                color: rgb(36, 35, 41);
+                font-weight: bold;
+                font-style: italic;
+                line-height: 1.29;
+                position: absolute;
+                top: -32%;
+                left: 30%;
+                 
             }
         }
     }
@@ -109,7 +111,60 @@ div.container {
             left: 50%;
             top: 85%;
         }
+      
+
     }
+      /*----------*/
+
+      div.itm_JonSnow1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -94px;
+        //background-color: rgb(158, 69, 69);
+
+        z-index: 1;
+        display: flex;
+        overflow: hidden;
+        div.snow1{
+            width: 11px;
+            height: 14px;
+            background: black;
+            position: relative;
+            top: -5%;
+            left: 0%;
+            border-radius: 50%;
+            background: #D4EAE9;
+           
+            background: -webkit-radial-gradient(center, #D4EAE9, #0B827D);
+            background: -moz-radial-gradient(center, #D4EAE9, #0B827D);
+            background: radial-gradient(ellipse at center, #D4EAE9, #0B827D);
+            opacity: .8;
+
+            margin-left: 2%;
+
+            animation: 15s ease-in 1s infinite reverse both running identifier;
+            //animation: identifier linear 5s;
+            animation-delay: 35s;
+        }
+        @keyframes identifier {
+
+            0% { 
+                transform: translateY(97vh) translateX(50px) scale(0);
+                background: radial-gradient(ellipse at center, #d4eae9de, #0b827cd2);
+            }
+           
+            100% { 
+                transform: translateY(97%) translateX(-50px) scale(1);
+                background: radial-gradient(ellipse at center, #03d1c74d, #56c0bb4b);
+            }
+
+        }
+        
+    }
+
+    /*----------*/
+
     
 }
 
