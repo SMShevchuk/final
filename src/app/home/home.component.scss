@@ -1,17 +1,28 @@
 .wrap {
+<<<<<<< HEAD
+    // background-color: #B18663;
+=======
     //background-color: #B18663;
+>>>>>>> 60cc4795131855afc1af8f9b2bead90082edb186
     border: 1px solid #B18663;
+    position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+<<<<<<< HEAD
+    z-index: 12;
+
+=======
  
     
+>>>>>>> 60cc4795131855afc1af8f9b2bead90082edb186
     .content {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-around;
         margin-top: 5%;
         height: 80vh;
+       
 
         .main {
             width: 40%;
