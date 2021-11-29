@@ -6,6 +6,64 @@ div.container {
     //background: url(https://images.pexels.com/photos/730256/pexels-photo-730256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     position: relative;
     overflow: hidden;
+    /*------------------------*/
+    a.btn_back {
+        z-index: 33333;
+        padding: 10px 50px;
+        background-color: rgba(247, 247, 247, 0);
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        text-decoration: none;
+        font-size: 1.5em;
+        border: 2px solid black;
+        color: rgb(38, 100, 141);
+        transition-duration: 1s;
+       
+        i {
+            color: red;
+            position: relative;
+            left: -85%;
+        }
+    }
+    a.btn_back:hover::after {
+        content: "";
+        width: 80%;
+        transition-duration: 1s;
+        color: white;
+      
+
+    }
+    a.btn_back::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background-color: black;
+        top: 0px;
+        left: 0px;
+        transition-duration: 1s;
+        color: white;
+        border-radius: 0px 0px 100px 0px;
+    }
+    a.btn_back::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        background-color: rgb(128, 67, 67);
+        top: 0px;
+        left: 60%;
+        transition-duration: 1s;
+        color: white;
+        border-radius: 0px 0px 0px 0px;
+
+    }
+    
+    /*------------------------*/
+
     div.logo_1 {
         width: 20%;
         height: 10%;
