@@ -19,23 +19,23 @@ div.container {
         color: rgb(38, 100, 141);
         transition-duration: 1s;
         overflow: hidden;
-        border-radius: 1px;
+        border-radius: 5px;
         i {
             color: rgb(38, 100, 141);
             position: relative;
             left: -85%;
-            transition-duration: 1s;
+            transition-duration: .5s;
         }
         &:hover i {
             color: transparent;
-            transition-duration: 1s;
+            transition-duration: .5s;
         }
     }
 
     a.btn_back:hover::after {
         content: "Go";
         width: 80%;
-        transition-duration: 1s;
+        transition-duration: .7s;
         color: white;
         line-height: 100%;
         display: flex;
