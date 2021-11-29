@@ -5,6 +5,77 @@
     overflow: hidden;
     
 }
+  /*------------------------*/
+  a.btn_back {
+    z-index: 33333;
+    padding: 10px 50px;
+    background-color: rgba(247, 247, 247, 0);
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 2px solid rgba(38, 100, 141, 0.11);
+    color: rgb(38, 100, 141);
+    transition-duration: 1s;
+    overflow: hidden;
+    border-radius: 5px;
+    i {
+        color: rgb(38, 100, 141);
+        position: relative;
+        left: -85%;
+        transition-duration: .5s;
+    }
+    &:hover i {
+        color: transparent;
+        transition-duration: .5s;
+    }
+}
+
+a.btn_back:hover::after {
+    content: "Go";
+    width: 80%;
+    transition-duration: .5s;
+    color: white;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: rotate(0deg) scale(1);
+    font-style: italic;
+}
+a.btn_back::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(38, 100, 141);
+    top: 0px;
+    left: 0px;
+    transition-duration: 1s;
+    color: white;
+    //border-radius: 0px 0px 100px 0px;
+    transform: rotate(145deg) scale(0);
+    overflow: hidden;
+
+}
+a.btn_back::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(38, 100, 141);
+    top: 0px;
+    left: 60%;
+    transition-duration: 1s;
+    color: white;
+    border-radius: 0px 0px 0px 0px;
+}
+
+/*------------------------*/
 h1 {
     position: absolute;
     font-size: 100px;
