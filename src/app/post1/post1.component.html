@@ -1,8 +1,20 @@
 
 
 
-<div class="container">
+<div class="container" >
+
+    <!----------->
+
+  <!------- night mode   -------->
+    <app-night></app-night>
+    
+
+    <!------ snow ----->
+
     <app-jon-snow></app-jon-snow>
+
+    <!----------->
+   
 
     <a routerLink="/home" routerLinkActive="active" class="btn_back">
       <i>Back</i>
@@ -17,7 +29,7 @@
 
     <div class="text_1">
 
-        <h1>PLAN YOUR CONTENT</h1>
+        <h1 >PLAN YOUR CONTENT</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi laborum molestiae fugit aliquid, ipsum nemo?</p>
         
         <a href="#">
@@ -26,7 +38,7 @@
     </div>
 
     <section class="desing">
-        
+
         <div class="itm_1">
             <img @openClose *ngIf="open"  src="../../assets/foto/pg-1/Shape-2.png" alt="" width="80%">
         </div>

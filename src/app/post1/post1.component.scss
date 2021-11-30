@@ -7,6 +7,20 @@ div.container {
     position: relative;
     overflow: hidden;
     /*------------------------*/
+    div.test_btn_js {
+        width: 100%;
+        //height: 200px;
+        background-color: red;
+        z-index: 11111111111111;
+        position: absolute;
+        top: 0px;
+        text-align: right;
+        button {
+            padding: 10px 20px;
+            border: none;
+        }
+    }
+    /*-------*/
     a.btn_back {
         z-index: 33333;
         padding: 10px 50px;
@@ -17,12 +31,12 @@ div.container {
         text-decoration: none;
         font-size: 1.5em;
         border: 2px solid rgba(38, 100, 141, 0.11);
-        color: rgb(38, 100, 141);
+        color: rgb(43, 125, 180);
         transition-duration: 1s;
         overflow: hidden;
         border-radius: 5px;
         i {
-            color: rgb(38, 100, 141);
+            color: rgb(43, 125, 180);
             position: relative;
             left: -85%;
             transition-duration: .5s;
@@ -119,7 +133,7 @@ div.container {
         h1 {
             font-size: 69.51px;
             font-family: "Montserrat";
-            color: rgb(27, 26, 28);
+            //color: rgb(27, 26, 28);
             font-weight: bold;
             text-transform: uppercase;
             line-height: 0.976;
@@ -130,7 +144,7 @@ div.container {
         p {
             font-size: 26px;
             font-family: "Poppins";
-            color: rgb(36, 35, 41);
+            //color: rgb(36, 35, 41);
             line-height: 1.907;
             text-align: right;
             position: relative;
@@ -142,7 +156,7 @@ div.container {
              
                 font-size: 2em;
                 font-family: "Poppins";
-                color: rgb(36, 35, 41);
+                color: rgb(62, 80, 129);
                 font-weight: bold;
                 font-style: italic;
                 line-height: 1.29;
