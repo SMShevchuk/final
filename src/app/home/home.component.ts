@@ -58,12 +58,12 @@ export class HomeComponent implements OnInit {
  
   ngOnInit(): void {
     //this.open = false;
-    this.open = false;
+    this.open = !this.open;
 
     setTimeout(()=>{ // <<<---using ()=> syntax
     this.open = true;
     
-    }, 500);
+    }, 850);
     console.log('ngOnInit', this.open);
   }
 

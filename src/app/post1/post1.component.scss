@@ -30,8 +30,11 @@ div.container {
         &:hover i {
             color: transparent;
             transition-duration: .5s;
+            
         }
-    }
+      
+    } 
+   
 
     a.btn_back:hover::after {
         content: "Go";
@@ -45,6 +48,7 @@ div.container {
         overflow: hidden;
         transform: rotate(0deg) scale(1);
         font-style: italic;
+      
     }
     a.btn_back::after {
         content: "";
