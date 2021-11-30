@@ -280,10 +280,10 @@ div.container {
             top: 5vh;
         }
         div.foto_1 {
-            width: 33%;
-            height: 60%;
+            width: 40%;
+            height: 55%;
             top: 25vh;
-            left: 14%;
+            left: 10%;
         }
         div.text_1 {
             width: 30%;
@@ -360,3 +360,200 @@ div.container {
     }
   }
 
+  /*-------*/
+  @media screen and (max-width: 816px) {
+    div.container {
+        width: 100%;
+        height: 100vh;
+        //background-color: chocolate;
+     
+        div.logo_1 {
+            width: 15%;
+            height: 5%;
+           
+            left: 5%;
+            top: 5vh;
+        }
+        div.foto_1 {
+            width: 50%;
+            height: 40%;
+            top: 40vh;
+            left: 2%;
+        }
+        div.text_1 {
+            width: 30%;
+            height: 50%;
+            top: 35vh;
+            left: 51%;
+            h1 {
+                font-size: 40px;
+                line-height: 0.816;
+                top: -30%;
+                left: 30%;
+            }
+            p {
+                font-size: 20px;
+                line-height: 1.707;
+                top: -20%;
+                left: 30%;
+            }
+            a {
+                text-decoration: none;
+                i {
+                 
+                        font-size: 1.5em;
+                        line-height: 1.29;
+                        position: absolute;
+                        top: -56%;
+                        left: 35%;
+                }
+            }
+        }
+    
+        section.desing {
+            //background-color: cornflowerblue;
+            div.itm_1 {
+                position: absolute;
+                left: 88%;
+                top: 15%;
+               img {
+                   width: 60%;
+                  
+               }
+            }
+            div.itm_2 {
+                position: absolute;
+                left: 40%;
+                top: 5%;
+                img {
+                    width: 60%;
+                }
+            }
+            div.itm_3 {
+                position: absolute;
+                left: 85%;
+                top: 65%;
+                img {
+                    width: 60%;
+                    
+                }
+            }
+            div.itm_4 {
+                position: absolute;
+                left: 0%;
+                top: 30%;
+                img {
+                    width: 60%;
+                }
+            }
+            div.itm_5 {
+                position: absolute;
+                left: 50%;
+                top: 85%;
+                img {
+                    width: 65%;
+                }
+            }
+        }
+        
+    }
+  }
+/*-------*/
+@media screen and (max-width: 500px) {
+    div.container {
+        width: 100%;
+        height: 100vh;
+        //background-color: chocolate;
+     
+        div.logo_1 {
+            width: 25%;
+            height: 5%;
+           
+            left: 5%;
+            top: 5vh;
+        }
+        div.foto_1 {
+            width: 80%;
+            height: 40%;
+            top: 25vh;
+            left: 15%;
+        }
+        div.text_1 {
+            width: 80%;
+            height: auto;
+            top: 70vh;
+            left: 5%;
+            //background-color: red;
+            h1 {
+                font-size: 40px;
+                line-height: 0.816;
+                top: -0%;
+                left: 0%;
+            }
+            p {
+                font-size: 17px;
+                line-height: 1.707;
+                top: 0%;
+                left: 0%;
+            }
+            a {
+                text-decoration: none;
+                i {
+                 
+                        font-size: 1.2em;
+                        line-height: 1;
+                        position: absolute;
+                        top: -60vh;
+                        left: 60%;
+                }
+            }
+        }
+    
+        section.desing {
+            //background-color: cornflowerblue;
+            div.itm_1 {
+                position: absolute;
+                left: 88%;
+                top: 15%;
+               img {
+                   width: 60%;
+                  
+               }
+            }
+            div.itm_2 {
+                position: absolute;
+                left: 40%;
+                top: 5%;
+                img {
+                    width: 60%;
+                }
+            }
+            div.itm_3 {
+                position: absolute;
+                left: 89%;
+                top: 75%;
+                img {
+                    width: 60%;
+                    
+                }
+            }
+            div.itm_4 {
+                position: absolute;
+                left: 0%;
+                top: 30%;
+                img {
+                    width: 60%;
+                }
+            }
+            div.itm_5 {
+                position: absolute;
+                left: 50%;
+                top: 90%;
+                img {
+                    width: 65%;
+                }
+            }
+        }
+        
+    }
+  }
