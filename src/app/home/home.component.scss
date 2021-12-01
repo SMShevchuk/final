@@ -1,12 +1,67 @@
+ /*----------*/
+ div.desing_foto {
+    width: 100%;
+    height: 100vh;
+    //background-color: red;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    div.foto1 {
+        width: 100%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.158);
+       
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div.foto2 {
+        width: 100%;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.158);
+        background-image: url(../../assets/foto/pg-1/foto/foto2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+   
+    div.foto3 {
+        width: 100%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.295);
+      
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+
+/*----------*/
+
+
+
 .wrap {
+<<<<<<< HEAD
     // background-color: #B18663;
     // border: 1px solid #B18663;
+=======
+    //background-color: #B18663;
+    //border: 1px solid #B18663;
+>>>>>>> 626ee985d9b9a32636ba860b1b4075590ed18f1c
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
  
-    
+   
     .content {
         display: flex;
         flex-wrap: nowrap;
@@ -18,8 +73,13 @@
         .main {
             width: 40%;
             background-color: #fff;
+<<<<<<< HEAD
             box-shadow: 0 0 20px 10px silver;
 
+=======
+            box-shadow: 0 0 20px 10px rgb(143, 87, 87);
+            z-index: 5;
+>>>>>>> 626ee985d9b9a32636ba860b1b4075590ed18f1c
             .main_top {
                 
                 display: flex;
@@ -65,6 +125,7 @@
 
                 .main_girl {
                     height: 100%;
+                   
                 }
 
 

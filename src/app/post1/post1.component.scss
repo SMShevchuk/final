@@ -4,9 +4,24 @@ div.container {
     height: 100vh;
     //background-color: chocolate;
     //background: url(https://images.pexels.com/photos/730256/pexels-photo-730256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    
     position: relative;
     overflow: hidden;
     /*------------------------*/
+    div.test_btn_js {
+        width: 100%;
+        //height: 200px;
+        background-color: red;
+        z-index: 11111111111111;
+        position: absolute;
+        top: 0px;
+        text-align: right;
+        button {
+            padding: 10px 20px;
+            border: none;
+        }
+    }
+    /*-------*/
     a.btn_back {
         z-index: 33333;
         padding: 10px 50px;
@@ -17,12 +32,12 @@ div.container {
         text-decoration: none;
         font-size: 1.5em;
         border: 2px solid rgba(38, 100, 141, 0.11);
-        color: rgb(38, 100, 141);
+        color: rgb(43, 125, 180);
         transition-duration: 1s;
         overflow: hidden;
         border-radius: 5px;
         i {
-            color: rgb(38, 100, 141);
+            color: rgb(43, 125, 180);
             position: relative;
             left: -85%;
             transition-duration: .5s;
@@ -30,8 +45,11 @@ div.container {
         &:hover i {
             color: transparent;
             transition-duration: .5s;
+            
         }
-    }
+      
+    } 
+   
 
     a.btn_back:hover::after {
         content: "Go";
@@ -45,6 +63,7 @@ div.container {
         overflow: hidden;
         transform: rotate(0deg) scale(1);
         font-style: italic;
+      
     }
     a.btn_back::after {
         content: "";
@@ -91,11 +110,14 @@ div.container {
         left: 50px;
         top: 2vh;
     }
+    /*--------*/
     div.foto_1 {
         width: 35%;
         height: 65%;
         //background-color: red;
-        background: url(../../assets/foto/pg-1/foto1.png);
+        //background: url(../../assets/foto/pg-1/foto1.png);
+        background-image: url(../../assets/foto/pg-1/foto/dark_foto.jpg);
+        border-radius: 50%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -103,7 +125,62 @@ div.container {
         position: absolute;
         top: 20vh;
         left: 14%;
+     
+
+        /*-------*/
+        .flip-card {
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+           
+            perspective: 1000px; 
+            .flip-card-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+                
+                .flip-card-front, .flip-card-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden; /* Safari */
+                    backface-visibility: hidden;
+                }
+                .flip-card-front {
+                    background: url(../../assets/foto/pg-1/foto1.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-radius: 10%;
+                }
+                .flip-card-back {
+                    background-color: rgba(30, 143, 255, 0);
+                    color: white;
+                    transform: rotateY(180deg);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+          }
+          
+       
+          .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+            transition-duration: 1s;
+          }
+          
+         
+         
+        /*--------*/
+
+
     }
+    /*-------*/
     div.text_1 {
         width: 30%;
         height: 50%;
@@ -115,7 +192,7 @@ div.container {
         h1 {
             font-size: 69.51px;
             font-family: "Montserrat";
-            color: rgb(27, 26, 28);
+            //color: rgb(27, 26, 28);
             font-weight: bold;
             text-transform: uppercase;
             line-height: 0.976;
@@ -126,7 +203,7 @@ div.container {
         p {
             font-size: 26px;
             font-family: "Poppins";
-            color: rgb(36, 35, 41);
+            //color: rgb(36, 35, 41);
             line-height: 1.907;
             text-align: right;
             position: relative;
@@ -138,7 +215,7 @@ div.container {
              
                 font-size: 2em;
                 font-family: "Poppins";
-                color: rgb(36, 35, 41);
+                color: rgb(62, 80, 129);
                 font-weight: bold;
                 font-style: italic;
                 line-height: 1.29;
@@ -203,10 +280,10 @@ div.container {
             top: 5vh;
         }
         div.foto_1 {
-            width: 33%;
-            height: 60%;
+            width: 40%;
+            height: 55%;
             top: 25vh;
-            left: 14%;
+            left: 10%;
         }
         div.text_1 {
             width: 30%;
@@ -283,3 +360,200 @@ div.container {
     }
   }
 
+  /*-------*/
+  @media screen and (max-width: 816px) {
+    div.container {
+        width: 100%;
+        height: 100vh;
+        //background-color: chocolate;
+     
+        div.logo_1 {
+            width: 16%;
+            height: 5%;
+           
+            left: 5%;
+            top: 5vh;
+        }
+        div.foto_1 {
+            width: 50%;
+            height: 40%;
+            top: 40vh;
+            left: 2%;
+        }
+        div.text_1 {
+            width: 30%;
+            height: 50%;
+            top: 35vh;
+            left: 51%;
+            h1 {
+                font-size: 40px;
+                line-height: 0.816;
+                top: -30%;
+                left: 30%;
+            }
+            p {
+                font-size: 20px;
+                line-height: 1.707;
+                top: -20%;
+                left: 30%;
+            }
+            a {
+                text-decoration: none;
+                i {
+                 
+                        font-size: 1.5em;
+                        line-height: 1.29;
+                        position: absolute;
+                        top: -56%;
+                        left: 35%;
+                }
+            }
+        }
+    
+        section.desing {
+            //background-color: cornflowerblue;
+            div.itm_1 {
+                position: absolute;
+                left: 88%;
+                top: 15%;
+               img {
+                   width: 60%;
+                  
+               }
+            }
+            div.itm_2 {
+                position: absolute;
+                left: 40%;
+                top: 5%;
+                img {
+                    width: 60%;
+                }
+            }
+            div.itm_3 {
+                position: absolute;
+                left: 85%;
+                top: 65%;
+                img {
+                    width: 60%;
+                    
+                }
+            }
+            div.itm_4 {
+                position: absolute;
+                left: 0%;
+                top: 30%;
+                img {
+                    width: 60%;
+                }
+            }
+            div.itm_5 {
+                position: absolute;
+                left: 50%;
+                top: 85%;
+                img {
+                    width: 65%;
+                }
+            }
+        }
+        
+    }
+  }
+/*-------*/
+@media screen and (max-width: 500px) {
+    div.container {
+        width: 100%;
+        height: 100vh;
+        //background-color: chocolate;
+     
+        div.logo_1 {
+            width: 25%;
+            height: 5%;
+           
+            left: 5%;
+            top: 5vh;
+        }
+        div.foto_1 {
+            width: 80%;
+            height: 40%;
+            top: 25vh;
+            left: 15%;
+        }
+        div.text_1 {
+            width: 80%;
+            height: auto;
+            top: 70vh;
+            left: 5%;
+            //background-color: red;
+            h1 {
+                font-size: 40px;
+                line-height: 0.816;
+                top: -0%;
+                left: 0%;
+            }
+            p {
+                font-size: 17px;
+                line-height: 1.707;
+                top: 0%;
+                left: 0%;
+            }
+            a {
+                text-decoration: none;
+                i {
+                 
+                        font-size: 1.2em;
+                        line-height: 1;
+                        position: absolute;
+                        top: -60vh;
+                        left: 60%;
+                }
+            }
+        }
+    
+        section.desing {
+            //background-color: cornflowerblue;
+            div.itm_1 {
+                position: absolute;
+                left: 88%;
+                top: 15%;
+               img {
+                   width: 60%;
+                  
+               }
+            }
+            div.itm_2 {
+                position: absolute;
+                left: 40%;
+                top: 5%;
+                img {
+                    width: 60%;
+                }
+            }
+            div.itm_3 {
+                position: absolute;
+                left: 89%;
+                top: 75%;
+                img {
+                    width: 60%;
+                    
+                }
+            }
+            div.itm_4 {
+                position: absolute;
+                left: 0%;
+                top: 30%;
+                img {
+                    width: 60%;
+                }
+            }
+            div.itm_5 {
+                position: absolute;
+                left: 50%;
+                top: 90%;
+                img {
+                    width: 65%;
+                }
+            }
+        }
+        
+    }
+  }

@@ -3,7 +3,15 @@
 
 
 <div class="container">
-    <app-jon-snow></app-jon-snow>
+   <!------- night mode   -------->
+   <app-night></app-night>
+    
+
+   <!------ snow ----->
+
+   <app-jon-snow></app-jon-snow>
+
+   <!----------->
     <a routerLink="/home" routerLinkActive="active" class="btn_back">
         <i>Back</i>
       </a>
@@ -12,7 +20,21 @@
     </a>
   
 
-    <div class="foto_1"></div>
+    <div class="foto_1">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+
+                <div class="flip-card-front"></div>
+
+                <div class="flip-card-back">
+                    <h1>John Doe</h1>
+                    <p>Architect & Engineer</p>
+                    <p>We love that guy</p>
+                </div>
+                
+            </div>
+          </div>
+    </div>
 
     <div class="text_1">
 

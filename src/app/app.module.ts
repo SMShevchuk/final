@@ -10,6 +10,7 @@ import { Post1Component } from './post1/post1.component';
 import { Post3Component } from './post3/post3.component';
 import { HomeComponent } from './home/home.component';
 import { JonSnowComponent } from './post1/jon-snow/jon-snow.component';
+import { NightComponent } from './post1/night/night.component';
  //import { JonSnowComponent } from './jon-snow/jon-snow.component';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { JonSnowComponent } from './post1/jon-snow/jon-snow.component';
     Post1Component,
     Post3Component,
     HomeComponent,
-    JonSnowComponent
+    JonSnowComponent,
+    NightComponent
   ],
   imports: [
     BrowserModule,
